@@ -2,12 +2,18 @@
   <%_ if (ui === 'vuetify') { _%>
 import colors from 'vuetify/es5/util/colors'
   <%_ } _%>
+  <%_ if (ui === 'semantic-ui') { _%>
+import webpack from 'webpack'
+  <%_ } _%>
 <%_ } else { _%>
   <%_ if (server === 'adonis') { _%>
 const { resolve } = require('path')
   <%_ } _%>
   <%_ if (ui === 'vuetify') { _%>
 const colors = require('vuetify/es5/util/colors').default
+  <%_ } _%>
+  <%_ if (ui === 'semantic-ui') { _%>
+const webpack = require('webpack')
   <%_ } _%>
 <%_ } _%>
 
@@ -63,6 +69,8 @@ module.exports = {
     'ant-design-vue/dist/antd.css'
     <%_ } else if (ui === 'tachyons') { _%>
     'tachyons/css/tachyons.css'
+    <%_ } else if (ui === 'semantic-ui') { _%>
+    'fomantic-ui-css/semantic.min.css'
     <%_ } _%>
   ],
   /*
@@ -75,6 +83,9 @@ module.exports = {
     '@/plugins/iview'
     <%_ } else if (ui === 'ant-design-vue') { _%>
     '@/plugins/antd-ui'
+    <%_ } else if (ui === 'semantic-ui') { _%>
+      '@/plugins/semantic',
+      '@/plugins/load-all-components'
     <%_ } _%>
   ],
   /*
@@ -141,6 +152,14 @@ module.exports = {
         }
       }
     },
+    <%_ } else if (ui === 'semantic-ui') { _%>
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      })
+    ],
     <%_ } else if (ui === 'element-ui') { _%>
     transpile: [/^element-ui/],
     <%_ } else if (ui === 'tailwind') { _%>

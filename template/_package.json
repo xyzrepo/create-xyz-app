@@ -68,6 +68,8 @@
     "@nuxtjs/vuetify": "0.5.5",
     <%_ } else if (ui === 'bulma') { _%>
     "@nuxtjs/bulma": "^1.2.1",
+    <%_ } else if (ui === 'semantic-ui') { _%>
+    "fomantic-ui-css": "^2.7.6",
     <%_ } else if (ui === 'element-ui') { _%>
     "element-ui": "^2.4.11",
     <%_ } else if (ui === 'ant-design-vue') { _%>
@@ -98,7 +100,8 @@
     <%_ } else if (ui === 'vuetify') { _%>
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    <%_ } _%>
+    <%_ } else if (ui === 'semantic-ui') { _%>
+    "fomantic-ui-css": "^2.7.6",
     <%_ if (eslint) { _%>
     "@nuxtjs/eslint-config": "^0.0.1",
     "@nuxtjs/eslint-module": "^0.0.1",

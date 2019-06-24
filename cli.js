@@ -8,8 +8,8 @@ const generator = path.resolve(__dirname, './')
 // In a custom directory or current directory
 const outDir = path.resolve(process.argv[2] || '.')
 
-console.log(chalk`{cyan create-nuxt-app v${version}}`)
-console.log(chalk`✨  Generating Nuxt.js project in {cyan ${outDir}}`)
+console.log(chalk`{cyan create-xyz-app v${version}}`)
+console.log(chalk`✨  Generating XYZ.js project in {cyan ${outDir}}`)
 
 // See https://sao.js.org/#/advanced/standalone-cli
 sao({ generator, outDir, logLevel: 2 })
