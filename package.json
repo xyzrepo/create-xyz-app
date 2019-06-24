@@ -40,8 +40,6 @@
     "eslint-plugin-vue": "^5.1.0",
     "standard-version": "^5.0.1"
   },
-  "authors": [
-    "Baker <root@baker.io>",
-  ],
+  "authors": "Baker <root@baker.io>",
   "license": "MIT"
 }
