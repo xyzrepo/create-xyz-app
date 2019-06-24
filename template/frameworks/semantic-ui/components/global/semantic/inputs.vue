@@ -94,7 +94,7 @@ export default {
   }
 };
 </script>
-<style >
+<style>
 .ui.input + .ui.input {
   margin-left: 1em;
 }

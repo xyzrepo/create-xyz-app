@@ -14,3 +14,5 @@ coverage
 
 # Misc
 .DS_Store
+test/snapshots/index.test.js.md
+test/snapshots/index.test.js.snap

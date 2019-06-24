@@ -2,6 +2,7 @@
     <div>
         <div class="ui tablet computer only padded grid">
             <div class="ui borderless fluid huge inverted menu">
+                <Logo height="50"/>
                 <div class="ui container">
                     <nuxt-link class="header item" to="/"><%= name %></nuxt-link>
                     <nuxt-link class="item" to="/">Home</nuxt-link>

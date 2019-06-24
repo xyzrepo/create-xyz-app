@@ -155,9 +155,9 @@ export default {
 </script>
 
 <style >
-body {
-  /* padding: 1em; */
-}
+/* body {
+  padding: 1em;
+} */
 
 .ui.menu {
   margin: 3em 0em;

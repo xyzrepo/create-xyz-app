@@ -1,6 +1,4 @@
 <template>
-<div>
-  <div class="ui section divider"></div>
   <div id="footer" class="ui center aligned middle aligned inverted vertical fluid footer segment">
     <div class="ui text container row">
       <span class="ui large text">
@@ -9,7 +7,6 @@
         <b>XYZ</b>
       </span>
     </div>
-  </div>
   </div>
 </template>
 
