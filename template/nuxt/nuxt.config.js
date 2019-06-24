@@ -84,8 +84,8 @@ module.exports = {
     <%_ } else if (ui === 'ant-design-vue') { _%>
     '@/plugins/antd-ui'
     <%_ } else if (ui === 'semantic-ui') { _%>
-      '@/plugins/semantic',
-      '@/plugins/load-all-components'
+     { src: '@/plugins/semantic', mode: 'client' },
+     { src: '@/plugins/load-all-components', mode: 'client' }
     <%_ } _%>
   ],
   /*

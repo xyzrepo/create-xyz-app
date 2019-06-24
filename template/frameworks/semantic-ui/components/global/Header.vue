@@ -3,16 +3,15 @@
         <div class="ui tablet computer only padded grid">
             <div class="ui borderless fluid huge inverted menu">
                 <div class="ui container">
-                    <a class="header item" href="#root">Project Name</a>
-                    <a class="active item" href="#root">Home</a>
-                    <a class="item" href="#root">About</a>
-                    <a class="item" href="#root">Contact</a>
+                    <a class="header item" href="/"><%= name %></a>
+                    <a class="active item" href="/">Home</a>
+                    <a class="item" href="/theming">Theming</a>
                 </div>
             </div>
         </div>
         <div class="ui mobile only padded grid">
             <div class="ui borderless fluid huge inverted menu">
-                <a class="header item" href="#root">Project Name</a>
+                <a class="header item" href="/"><%= name %></a>
                 <div class="right menu">
                     <div class="item">
                         <button @click="clickToggle" class="ui icon toggle basic inverted button">
@@ -21,9 +20,8 @@
                     </div>
                 </div>
                 <div class="ui vertical borderless fluid inverted menu">
-                    <a class="active item" href="#root">Home</a>
-                    <a class="item" href="#root">About</a>
-                    <a class="item" href="#root">Contact</a>
+                    <a class="active item" href="/">Home</a>
+                    <a class="item" href="theming">Theming</a>
                 </div>
             </div>
         </div>
@@ -40,7 +38,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .ui.inverted.menu {
     border-radius: 0;
     flex-wrap: wrap;
