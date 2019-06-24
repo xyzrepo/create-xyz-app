@@ -1,7 +1,7 @@
 {
-  "name": "create-nuxt-app",
-  "version": "2.7.1",
-  "description": "Create a Nuxt.js App in seconds.",
+  "name": "create-xyz-app",
+  "version": "1.0.0",
+  "description": "Create a Nuxt.js App in seconds, with some XYZ flavor.",
   "bin": "cli.js",
   "files": [
     "cli.js",
@@ -9,7 +9,7 @@
     "template/"
   ],
   "repository": {
-    "url": "git+https://github.com/nuxt/create-nuxt-app.git",
+    "url": "git+https://github.com/xyzrepo/create-xyz-app.git",
     "type": "git"
   },
   "scripts": {
@@ -41,9 +41,7 @@
     "standard-version": "^5.0.1"
   },
   "authors": [
-    "Egoist <0x142857@gmail.com>",
-    "Nuxt team <team@nuxtjs.org>",
-    "Clark Du <clark.duxin@gmail.com>"
+    "Baker <root@baker.io>",
   ],
   "license": "MIT"
 }
