@@ -3,15 +3,15 @@
         <div class="ui tablet computer only padded grid">
             <div class="ui borderless fluid huge inverted menu">
                 <div class="ui container">
-                    <a class="header item" href="/"><%= name %></a>
-                    <a class="active item" href="/">Home</a>
-                    <a class="item" href="/theming">Theming</a>
+                    <nuxt-link class="header item" to="/"><%= name %></nuxt-link>
+                    <nuxt-link class="item" to="/">Home</nuxt-link>
+                    <nuxt-link class="item" to="/theming">Theming</nuxt-link>
                 </div>
             </div>
         </div>
         <div class="ui mobile only padded grid">
             <div class="ui borderless fluid huge inverted menu">
-                <a class="header item" href="/"><%= name %></a>
+                <nuxt-link class="header item" to="/"><%= name %></nuxt-link>
                 <div class="right menu">
                     <div class="item">
                         <button @click="clickToggle" class="ui icon toggle basic inverted button">
@@ -20,8 +20,8 @@
                     </div>
                 </div>
                 <div class="ui vertical borderless fluid inverted menu">
-                    <a class="active item" href="/">Home</a>
-                    <a class="item" href="theming">Theming</a>
+                    <nuxt-link class="item" to="/">Home</nuxt-link>
+                    <nuxt-link class="item" to="/theming">Theming</nuxt-link>
                 </div>
             </div>
         </div>
