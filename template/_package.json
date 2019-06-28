@@ -5,6 +5,7 @@
   "author": "<%= author %>",
   "private": true,
   "scripts": {
+    "postinstall": "postinstall",
     <%_ if (eslint) { _%>
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "<%= pmRun %> lint",
@@ -26,10 +27,11 @@
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
     <%_ } _%>
   },
   "dependencies": {
+    "postinstall": "*",
     <%_ if (server !== 'none') { _%>
     "cross-env": "^5.2.0",
     <%_ } _%>
@@ -69,7 +71,7 @@
     <%_ } else if (ui === 'bulma') { _%>
     "@nuxtjs/bulma": "^1.2.1",
     <%_ } else if (ui === 'semantic-ui') { _%>
-    "fomantic-ui-css": "^2.7.6",
+    "fomantic-ui-less": "^2.7.6",
     "jquery": "^3.4.1",
     <%_ } else if (ui === 'element-ui') { _%>
     "element-ui": "^2.4.11",
@@ -102,7 +104,10 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     <%_ } else if (ui === 'semantic-ui') { _%>
+    "less": "*",
+    "less-loader": "*",
     "fomantic-ui-css": "^2.7.6",
+    "fomantic-ui-less": "^2.7.6",
     "jquery": "^3.4.1",
     <%_ } _%>
     <%_ if (eslint) { _%>
@@ -140,5 +145,18 @@
     "require-extension-hooks-vue": "^2.0.0",
     <%_ } _%>
     "nodemon": "^1.18.9"
+  },
+  "postinstall": {
+    <%_ if (ui === 'semantic-ui') { _%>
+      "jquery/dist/jquery.slim.min.js": "link assets/js/jquery.js",
+      "jquery/dist/jquery.slim.min.map": "link assets/js/jquery.js.map",
+      "fomantic-ui-css/semantic.min.js": "copy assets/js/semantic.js",
+      // "fomantic-ui-less": "copy assets/semantic",
+      "fomantic-ui-less/themes": "copy assets/themes",
+      "fomantic-ui-less/theme.config.example": "copy assets/semantic/theme.config",
+      "fomantic-ui-less/theme.less": "copy assets/semantic/theme.less",
+      "fomantic-ui-less/semantic.less": "copy assets/semantic/semantic.less",
+      "fomantic-ui-less/_site": "copy assets/semantic/site"
+      <%_ } _%>
   }
 }

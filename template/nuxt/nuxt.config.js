@@ -70,7 +70,7 @@ module.exports = {
     <%_ } else if (ui === 'tachyons') { _%>
     'tachyons/css/tachyons.css'
     <%_ } else if (ui === 'semantic-ui') { _%>
-    'fomantic-ui-css/semantic.min.css'
+    'fomantic-ui-less/semantic.less'
     <%_ } _%>
   ],
   /*
