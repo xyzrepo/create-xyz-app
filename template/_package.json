@@ -189,7 +189,6 @@
       "jquery/dist/jquery.slim.min.js": "link assets/js/jquery.js",
       "jquery/dist/jquery.slim.min.map": "link assets/js/jquery.js.map",
       "fomantic-ui-css/semantic.min.js": "link assets/js/semantic.js",
-      // "fomantic-ui-less": "copy assets/semantic",
       "fomantic-ui-less/themes": "link assets/themes",
       "fomantic-ui-less/theme.config.example": "link assets/semantic/theme.config",
       "fomantic-ui-less/theme.less": "link assets/semantic/theme.less",
