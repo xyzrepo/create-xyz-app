@@ -40,8 +40,6 @@
     "fomantic-ui-less/_site": "copy assets/fomantic-ui-less/site"
     <%_ } _%>
   },
-    <%_ } _%>
-  },
   "dependencies": {
     <%_ if (server !== 'none') { _%>
     "cross-env": "^5.2.0",
