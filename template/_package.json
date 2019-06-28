@@ -86,9 +86,9 @@
     "@nuxtjs/bulma": "^1.2.1",
     <%_
     } else if (ui === 'semantic-ui') { _%>
-    "postinstall": "*",
-    "less": "*",
-    "less-loader": "*",
+    "postinstall": "1.0",
+    "less": "^3.9",
+    "less-loader": "^5.0",
     "fomantic-ui-css": "^2.7.6",
     "fomantic-ui-less": "^2.7.6",
     "jquery": "^3.4.1",
@@ -135,9 +135,9 @@
       "stylus-loader": "^3.0.2",
     <%_
     } else if (ui === 'semantic-ui') { _%>
-    "postinstall": "*",
-    "less": "*",
-    "less-loader": "*",
+    "postinstall": "1.0",
+    "less": "^3.9",
+    "less-loader": "^5.0",
     "fomantic-ui-css": "^2.7.6",
     "fomantic-ui-less": "^2.7.6",
     "jquery": "^3.4.1",
