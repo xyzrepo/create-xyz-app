@@ -1,5 +1,5 @@
-import '~/assets/js/jquery';
-import '~/assets/js/semantic';
+import '~/assets/js/jquery'
+import '~/assets/js/semantic'
 // import Vue from 'vue';
 // import jquery from 'jquery';
 // import 'fomantic-ui-css/semantic.min';
