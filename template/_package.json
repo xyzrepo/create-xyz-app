@@ -5,7 +5,6 @@
   "author": "<%= author %>",
   "private": true,
   "scripts": {
-    "postinstall": "postinstall",
     <%_ if (eslint) { _%>
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
       "precommit": "<%= pmRun %> lint",
