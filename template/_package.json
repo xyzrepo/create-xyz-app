@@ -184,7 +184,6 @@
     } _%>
     "nodemon": "^1.18.9"
   },
-    <%_ if (ui === 'semantic-ui') { _%>  
     "postinstall": {
       "jquery/dist/jquery.slim.min.js": "link assets/js/jquery.js",
       "jquery/dist/jquery.slim.min.map": "link assets/js/jquery.js.map",
@@ -195,6 +194,4 @@
       "fomantic-ui-less/semantic.less": "link assets/semantic/semantic.less",
       "fomantic-ui-less/_site": "link assets/semantic/site"
     }
-  <%_
-  } _%>
 }
