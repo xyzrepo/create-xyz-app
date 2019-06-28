@@ -48,7 +48,7 @@
     <%_
     } else if (server === 'hapi') { _%>
     "@hapi/hapi": "^18.3.1",
-      "@nuxtjs/hapi": "^2.2.1",
+    "@nuxtjs/hapi": "^2.2.1",
     <%_
     } else if (server === 'micro') { _%>
     "micro": "^9.3.3",
@@ -87,11 +87,11 @@
     <%_
     } else if (ui === 'semantic-ui') { _%>
     "postinstall": "^1.0",
-    "less": "^3.9",
-    "less-loader": "^5.0",
-    "fomantic-ui-css": "^2.7.6",
-    "fomantic-ui-less": "^2.7.6",
-    "jquery": "^3.4.1",
+      "less": "^3.9",
+      "less-loader": "^5.0",
+      "fomantic-ui-css": "^2.7.6",
+      "fomantic-ui-less": "^2.7.6",
+      "jquery": "^3.4.1",
     <%_
     } else if (ui === 'element-ui') { _%>
     "element-ui": "^2.4.11",
@@ -136,11 +136,11 @@
     <%_
     } else if (ui === 'semantic-ui') { _%>
     "postinstall": "^1.0",
-    "less": "^3.9",
-    "less-loader": "^5.0",
-    "fomantic-ui-css": "^2.7.6",
-    "fomantic-ui-less": "^2.7.6",
-    "jquery": "^3.4.1",
+      "less": "^3.9",
+      "less-loader": "^5.0",
+      "fomantic-ui-css": "^2.7.6",
+      "fomantic-ui-less": "^2.7.6",
+      "jquery": "^3.4.1",
     <%_
     } _%>
     <%_ if (eslint) { _%>
@@ -188,13 +188,13 @@
     "postinstall": {
       "jquery/dist/jquery.slim.min.js": "link assets/js/jquery.js",
       "jquery/dist/jquery.slim.min.map": "link assets/js/jquery.js.map",
-      "fomantic-ui-css/semantic.min.js": "copy assets/js/semantic.js",
+      "fomantic-ui-css/semantic.min.js": "link assets/js/semantic.js",
       // "fomantic-ui-less": "copy assets/semantic",
-      "fomantic-ui-less/themes": "copy assets/themes",
-      "fomantic-ui-less/theme.config.example": "copy assets/semantic/theme.config",
-      "fomantic-ui-less/theme.less": "copy assets/semantic/theme.less",
-      "fomantic-ui-less/semantic.less": "copy assets/semantic/semantic.less",
-      "fomantic-ui-less/_site": "copy assets/semantic/site"
+      "fomantic-ui-less/themes": "link assets/themes",
+      "fomantic-ui-less/theme.config.example": "link assets/semantic/theme.config",
+      "fomantic-ui-less/theme.less": "link assets/semantic/theme.less",
+      "fomantic-ui-less/semantic.less": "link assets/semantic/semantic.less",
+      "fomantic-ui-less/_site": "link assets/semantic/site"
     }
   <%_
   } _%>
